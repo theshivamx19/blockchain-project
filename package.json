@@ -1,0 +1,22 @@
+{
+  "name": "blockchainproject",
+  "version": "1.0.0",
+  "description": "This project is developed by me, this is blockchain project",
+  "main": "index.js",
+  "scripts": {
+    "test": "src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theshivamx19/blockchain-project.git"
+  },
+  "author": "Shivam Maurya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theshivamx19/blockchain-project/issues"
+  },
+  "homepage": "https://github.com/theshivamx19/blockchain-project#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
