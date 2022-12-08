@@ -11,7 +11,15 @@ const getCryptoData = async function(req, res){
         }
         let myResult = await axios(options)  
         let {data} = myResult.data
-        data.sort((a,b)=>a.changePercent24Hr - b.changePercent24Hr)     
+        data.sort((a,b)=>a.changePercent24Hr - b.changePercent24Hr)
+        
+        // await cryptoModel.deleteMany()
+
+        data.forEach(values=> {
+        const findData = new cryptoModel(values)
+        findData.save()            
+        });
+
         return res.status(200).send({status : true, msg : 'Data created successfully', data : data})
     }
     catch(err){
